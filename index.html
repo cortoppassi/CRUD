@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadatro de Funcionarios</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Cadastro de Funcionarios</h1>
+
+        <button id="">Incluir</button>
+        <button id="">Editar</button>
+        <button id="">Excluir</button>
+        <hr>
+            <div>
+                <form>
+                    <label for="">Nome</label>
+                    <input type="text" id="nome" required>
+
+                    <label for="">Função</label>
+                    <input type="text" id="funcao" required>
+
+                    <label for="">Salario</label>
+                    <input type="text" id="salario" required>
+
+                    <button onclick="add()">Salvar</button>
+                </form>
+            </div>
+            
+            <div>
+                <ul>
+                    <li id="primeiro"><input type="checkbox"></li><br>
+                    <li id="segundo"><input type="checkbox"></li><br>
+                    <li id="terceiro"><input type="checkbox"></li><br>
+                    
+                </ul>
+             </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
