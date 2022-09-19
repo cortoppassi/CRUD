@@ -1,19 +1,27 @@
+var listaderegistros = [];
 function add(){
-    var nome = document.getElementById("nome").value;
+    var nomefuncionario = document.getElementById("nome").value;
     var funcao = document.getElementById("funcao").value;
     var salario = document.getElementById("salario").value;
 
-    var texto = [nome, funcao, salario];
-    document.getElementById('dados').innerHTML = texto;
-    alert(texto)
+    var registro = { 
+        nomefuncionario : nomefuncionario, 
+        funcao : funcao, 
+        salario : salario
+    };
+    listaderegistros.push(registro);
+    listar(registro)
     
+    var formulario = document.getElementById('formulario');
+    formulario.reset();
 }
-function add(){
-    var btnNova = document.createElement("button");
-    var conteudoNovo = document.createTextNode("Editar");
-    btnNova.appendChild(conteudoNovo);
-    //document.getElementById('editar').innerHTML = edit
-    var divAtual = document.getElementById("div1");
-    document.body.insertBefore(btnNova, divAtual);
+
+function listar(registro){
+
     
+    var dados = document.getElementById('dados');
+    var elementoLi = document.createElement('li')
+    elementoLi.append(registro.nomefuncionario.);
+    dados.append(elementoLi)
+
 }

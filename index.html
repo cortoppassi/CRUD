@@ -22,27 +22,21 @@
 
          <hr>
             <div>
-                <form>
+                <form onsubmit="return false" id="formulario">
                     <label for="">Nome</label>
-                     <input type="text" id="nome" required>
+                     <input type="text" id="nome">
 
                     <label for="">Função</label>
-                    <input type="text" id="funcao" required>
+                    <input type="text" id="funcao">
 
                     <label for="">Salario</label>
-                    <input type="text" id="salario" required>
+                    <input type="text" id="salario">
 
                     <button onclick="add()" id="salvar">Salvar</button>
                 </form>
             </div>
             
-            <ul id="dados">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                
-            </ul>
+            <ul id="dados"></ul>
     </div>
 
     <script src="script.js"></script>
