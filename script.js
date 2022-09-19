@@ -2,12 +2,18 @@ function add(){
     var nome = document.getElementById("nome").value;
     var funcao = document.getElementById("funcao").value;
     var salario = document.getElementById("salario").value;
-    //Pega o ID nome e transfora em variaveis
-   //document.getElementById('primeiro').innerHTML = input + inpu + inp
-    //Seleciona o ID primeiro e escreve a variavel input
+
+    var texto = [nome, funcao, salario];
+    document.getElementById('dados').innerHTML = texto;
+    alert(texto)
     
-    //document.write.primeiro(input + inpu + inp).value
-    var texto = nome + funcao + salario
-    document.getElementById('primeiro').innerHTML = texto;
-    window.document.write(texto+innerHTML)
+}
+function add(){
+    var btnNova = document.createElement("button");
+    var conteudoNovo = document.createTextNode("Editar");
+    btnNova.appendChild(conteudoNovo);
+    //document.getElementById('editar').innerHTML = edit
+    var divAtual = document.getElementById("div1");
+    document.body.insertBefore(btnNova, divAtual);
+    
 }
