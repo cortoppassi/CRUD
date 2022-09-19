@@ -21,7 +21,7 @@ function listar(registro){
     
     var dados = document.getElementById('dados');
     var elementoLi = document.createElement('li')
-    elementoLi.append(registro.nomefuncionario.);
+    elementoLi.append(registro.nomefuncionario);
     dados.append(elementoLi)
 
 }
