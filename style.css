@@ -58,5 +58,12 @@ form{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgb(211, 213, 213);
+    border: solid 1px;
+    
+    
+}
+#lista:hover {
+    transform: scale(1.01);
 }
 
