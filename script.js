@@ -21,17 +21,33 @@ function listar(registro) {
 
     var dados = document.getElementById('dados');
     var elementoLi = document.createElement('li');
+    elementoLi.setAttribute("id", "dadoslista")
     elementoLi.append(registro.nomefuncionario);
     dados.append(elementoLi);
 
     var dadosF = document.getElementById('dadosF');
     var elementoLi = document.createElement('li');
+    elementoLi.setAttribute("id", "dadoslista")
     elementoLi.append(registro.funcao);
     dadosF.append(elementoLi);
 
     var dados = document.getElementById('dadosS');
     var elementoLi = document.createElement('li');
+    elementoLi.setAttribute("id", "dadoslista")
     elementoLi.append(registro.salario);
     dadosS.append(elementoLi);
+
+}
+
+function excluir() {
+    
+    document.getElementById('dadoslista').remove()
+  
+}
+
+function editar() {
+
+    var edit = window.prompt()
+    document.getElementById('dadoslista').innerHTML = (edit)
 
 }
