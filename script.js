@@ -47,9 +47,25 @@ function excluir() {
   
 }
 
-function editar() {
-
-    var edit = window.prompt()
-    document.getElementById('dadoslista').innerHTML = (edit)
-
+function editar(id) {
+    document.getElementById(id).style.display = 'block';
 }
+function fechar(id) {
+    document.getElementById(id).style.display = 'none';
+}
+
+function editname() {
+    var newname = window.prompt()
+    document.getElementById('dadoslistaNome').innerHTML = newname;
+    
+}
+
+function editfunction() {
+    var newfunction = window.prompt()
+    document.getElementById('dadoslistaFuncao').innerHTML = newfunction;
+}
+
+function editsalary() {
+    var newsalary = window.prompt()
+     document.getElementById('dadoslistaSalario').innerHTML = newsalary;
+}  

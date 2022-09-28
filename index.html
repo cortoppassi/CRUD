@@ -15,9 +15,19 @@
 
     <div class="container">
         <div id="button">
-            <button id="editar" onclick="editar()">Editar</button>
-            <button id="excluir" onclick="excluir()">Excluir</button>
+            <button id="editar" onclick="editar('popup')">Editar</button>
+            <button id="excluir" onclick="excluir()">Excluir</button> 
+
+            <div class="btnFechar" onclick="fechar('popup')">
+                <div id="popup">
+                    <a href="javascript:;">Fechar</a>
+                    <button id="editarNome" onclick="editname()">Nome</button>
+                    <button id="editarFuncao" onclick="editfunction()">função</button>
+                    <button id="editarSalario" onclick="editsalary()">Salario</button>
+                </div> 
+            </div>
         </div>
+           
      <hr>
             <div>
                 <form onsubmit="return false" id="formulario">
