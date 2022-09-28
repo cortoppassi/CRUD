@@ -21,19 +21,19 @@ function listar(registro) {
 
     var dados = document.getElementById('dados');
     var elementoLi = document.createElement('li');
-    elementoLi.setAttribute("id", "dadoslista")
+    elementoLi.setAttribute("id", "dadoslistaNome")
     elementoLi.append(registro.nomefuncionario);
     dados.append(elementoLi);
 
     var dadosF = document.getElementById('dadosF');
     var elementoLi = document.createElement('li');
-    elementoLi.setAttribute("id", "dadoslista")
+    elementoLi.setAttribute("id", "dadoslistaFuncao")
     elementoLi.append(registro.funcao);
     dadosF.append(elementoLi);
 
     var dados = document.getElementById('dadosS');
     var elementoLi = document.createElement('li');
-    elementoLi.setAttribute("id", "dadoslista")
+    elementoLi.setAttribute("id", "dadoslistaSalario")
     elementoLi.append(registro.salario);
     dadosS.append(elementoLi);
 
@@ -41,7 +41,9 @@ function listar(registro) {
 
 function excluir() {
     
-    document.getElementById('dadoslista').remove()
+    document.getElementById('dadoslistaNome').remove()
+    document.getElementById('dadoslistaFuncao').remove()
+    document.getElementById('dadoslistaSalario').remove()
   
 }
 
