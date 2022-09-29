@@ -70,7 +70,7 @@ form{
 
 #popup {
     background-color: rgb(219, 212, 212);
-    width: 250px;
+    width: 220px;
     height: 22px;
     margin-left: 100px;
     display: none;
@@ -103,5 +103,11 @@ form{
     background-color: rgba(116, 138, 182, 0.404);
 }
 #editarSalario:hover {
+    transform: scale(1.07);
+}
+#fechar {
+    background-color: rgba(255, 0, 0, 0.614);
+}
+#fechar:hover {
     transform: scale(1.07);
 }

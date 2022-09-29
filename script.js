@@ -55,17 +55,17 @@ function fechar(id) {
 }
 
 function editname() {
-    var newname = window.prompt()
+    var newname = window.prompt('Digite o novo nome:')
     document.getElementById('dadoslistaNome').innerHTML = newname;
     
 }
 
 function editfunction() {
-    var newfunction = window.prompt()
+    var newfunction = window.prompt('Digite a nova função:')
     document.getElementById('dadoslistaFuncao').innerHTML = newfunction;
 }
 
 function editsalary() {
-    var newsalary = window.prompt()
+    var newsalary = window.prompt('Digite o novo salario:')
      document.getElementById('dadoslistaSalario').innerHTML = newsalary;
 }  
