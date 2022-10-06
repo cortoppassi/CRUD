@@ -4,6 +4,10 @@ function add() {
     var nomefuncionario = document.getElementById("nome").value;
     var funcao = document.getElementById("funcao").value;
     var salario = document.getElementById("salario").value;
+    document.getElementById('editar').style.display = 'block';
+    document.getElementById('excluir').style.display = 'block';
+    document.getElementById('lista').style.display = 'flex';
+
 
     var registro = { 
         nomefuncionario : nomefuncionario,
@@ -44,11 +48,17 @@ function excluir() {
     document.getElementById('dadoslistaNome').remove()
     document.getElementById('dadoslistaFuncao').remove()
     document.getElementById('dadoslistaSalario').remove()
-  
+    document.getElementById('excluir').style.display = 'none';
+    document.getElementById('editar').style.display = 'none';
+    document.getElementById('lista').style.display = 'none';
+
+
 }
 
 function editar(id) {
     document.getElementById(id).style.display = 'block';
+    
+   
 }
 function fechar(id) {
     document.getElementById(id).style.display = 'none';

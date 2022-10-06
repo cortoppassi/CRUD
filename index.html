@@ -15,8 +15,6 @@
 
     <div class="container">
         <div id="button">
-            <button id="editar" onclick="editar('popup')">Editar</button>
-            <button id="excluir" onclick="excluir()">Excluir</button> 
 
             <div class="btnFechar" onclick="fechar('popup')">
                 <div id="popup">
@@ -45,9 +43,11 @@
                 <hr>
             </div>
             <div id="lista">
-                <div><ul id="dados"></ul></div>
-                <div><ul id="dadosF"></ul></div>
-                <div><ul id="dadosS"></ul></div>
+                <div id="dadosNome"><ul id="dados"></ul></div>
+                <div id="dadosFuncao"><ul id="dadosF"></ul></div>
+                <div id="dadosSalario"><ul id="dadosS"></ul></div>
+                <button id="editar" onclick="editar('popup')"><img src="https://cdn-icons-png.flaticon.com/512/1250/1250614.png" width="15px" alt=""></button>
+                <button id="excluir" onclick="excluir()"><img src="https://cdn-icons-png.flaticon.com/512/1799/1799391.png" width="15px" alt=""></button> 
             </div>
     </div>
 

@@ -20,21 +20,29 @@ div#button{
     background-color: rgba(0, 128, 0, 0.401);
     border-radius: 3px;
 }
+
 #salvar:hover{
     transform: scale(1.07);
 }
 #editar{
     background-color: rgba(116, 138, 182, 0.401);
-    border-radius: 3px;
-    width: 20%;   
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: none;
+    margin-top: 10px;  
 }
 #editar:hover{
     transform: scale(1.07);
 }
 #excluir{
     background-color: rgba(182, 116, 116, 0.49);
-    border-radius: 3px;
-    width: 20%;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: none;
+    margin-top: 10px; 
+    margin-right: 15px;
 }
 #excluir:hover{
     transform: scale(1.07);
@@ -55,16 +63,17 @@ form{
 }
 
 #lista {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(211, 213, 213);
     border: solid 1px;
-    
+    border-radius: 3px;
     
 }
 #lista:hover {
     transform: scale(1.01);
+    
     
 }
 
@@ -110,4 +119,13 @@ form{
 }
 #fechar:hover {
     transform: scale(1.07);
+}
+#dadosNome {
+    cursor: pointer;
+}
+#dadosFuncao {
+    cursor: pointer;
+}
+#dadosSalario {
+    cursor: pointer;
 }
