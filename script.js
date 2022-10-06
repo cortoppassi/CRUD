@@ -56,12 +56,15 @@ function excluir() {
 }
 
 function editar(id) {
-    document.getElementById(id).style.display = 'block';
-    
-   
-}
-function fechar(id) {
-    document.getElementById(id).style.display = 'none';
+
+    document.getElementById("dadosNome").addEventListener("click", editname);
+    document.getElementById("dadosFuncao").addEventListener("click", editfunction);
+    document.getElementById("dadosSalario").addEventListener("click", editsalary); 
+
+    document.getElementById('dadosNome').style.cursor = 'pointer';
+    document.getElementById('dadosFuncao').style.cursor = 'pointer';
+    document.getElementById('dadosSalario').style.cursor = 'pointer';
+
 }
 
 function editname() {
@@ -69,6 +72,7 @@ function editname() {
     document.getElementById('dadoslistaNome').innerHTML = newname;
     
 }
+
 
 function editfunction() {
     var newfunction = window.prompt('Digite a nova função:')

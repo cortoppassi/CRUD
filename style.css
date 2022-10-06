@@ -1,8 +1,4 @@
-body{
-   
 
-    
-}
 header {
 background-color: rgb(227, 227, 227);
 text-align: center;
@@ -23,6 +19,7 @@ div#button{
 
 #salvar:hover{
     transform: scale(1.07);
+    background-color: rgba(0, 128, 0, 0.295);
 }
 #editar{
     background-color: rgba(116, 138, 182, 0.401);
@@ -34,6 +31,7 @@ div#button{
 }
 #editar:hover{
     transform: scale(1.07);
+    background-color: rgba(116, 138, 182, 0.293);
 }
 #excluir{
     background-color: rgba(182, 116, 116, 0.49);
@@ -46,6 +44,7 @@ div#button{
 }
 #excluir:hover{
     transform: scale(1.07);
+    background-color: rgba(182, 116, 116, 0.395);
 }
 
 div.container {
@@ -57,9 +56,6 @@ div.container {
 }
 ul{
     list-style: none;
-}
-form{
-    
 }
 
 #lista {
@@ -121,11 +117,11 @@ form{
     transform: scale(1.07);
 }
 #dadosNome {
-    cursor: pointer;
+    cursor: auto;
 }
 #dadosFuncao {
-    cursor: pointer;
+    cursor: auto;
 }
 #dadosSalario {
-    cursor: pointer;
+    cursor: auto;
 }
