@@ -13,31 +13,27 @@
       <h1>Cadastro de Funcionarios</h1>
     </header>
 
-    <div class="container">
-       
-     <hr>
-            <div>
-                <form onsubmit="return false" id="formulario">
-                    <label for="">Nome</label>
-                     <input type="text" id="nome">
+    <div class="container"><hr>
+         <div>
+            <form onsubmit="return false" id="formulario">
+                <label for="">Nome</label>
+                <input type="text" id="nome">
 
-                    <label for="">Função</label>
-                    <input type="text" id="funcao">
+                <label for="">Função</label>
+                <input type="text" id="funcao">
 
-                    <label for="">Salario</label>
-                    <input type="text" id="salario">
+                <label for="">Salario</label>
+                <input type="text" id="salario">
 
-                    <button onclick="add()" id="salvar">Salvar</button>
-                </form>
-                <hr>
-            </div>
-            <div id="lista">
-                <div id="dadosNome"><ul id="dados"></ul></div>
-                <div id="dadosFuncao"><ul id="dadosF"></ul></div>
-                <div id="dadosSalario"><ul id="dadosS"></ul></div>
-                <button id="editar" onclick="editar('popup')"><img src="https://cdn-icons-png.flaticon.com/512/1250/1250614.png" width="15px" alt=""></button>
-                <button id="excluir" onclick="excluir()"><img src="https://cdn-icons-png.flaticon.com/512/1799/1799391.png" width="15px" alt=""></button> 
-            </div>
+                <button onclick="add()" id="salvar">Salvar</button>
+            </form>
+             <hr>
+        </div>
+        <div id="lista">
+            <ul id="dados"></ul>
+            <button id="editar" onclick="editar('popup')"><img src="https://cdn-icons-png.flaticon.com/512/1250/1250614.png" width="15px" alt=""></button>
+            <button id="excluir" onclick="excluir()"><img src="https://cdn-icons-png.flaticon.com/512/1799/1799391.png" width="15px" alt=""></button> 
+        </div>
     </div>
 
     <script src="script.js"></script>
