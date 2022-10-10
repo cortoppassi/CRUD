@@ -17,48 +17,35 @@ function add() {
   listar();
 }
 
-function listar() {
-  listaderegistros.forEach((element) => {
-    const registro = element;
-    var dados = document.getElementById("lista");
-    var elementoLi = document.createElement("li");
-    elementoLi.setAttribute("id", "dadoslistaNome");
-    elementoLi.append(registro.nomefuncionario);
+function listar(registro) {
+  var dados = document.getElementById("dados");
+  var elementoLi = document.createElement("li");
+  elementoLi.setAttribute("id", "dadoslistaNome");
+  elementoLi.append(registro.nomefuncionario);
+  dados.append(elementoLi);
 
-    const botaoEditar = document.createElement("button");
-    botaoEditar.innerHTML = "Editar";
+  var dadosF = document.getElementById("dadosF");
+  var elementoLi = document.createElement("li");
+  elementoLi.setAttribute("id", "dadoslistaFuncao");
+  elementoLi.append(registro.funcao);
+  dadosF.append(elementoLi);
 
-    const botaoDeletar = document.createElement("button");
-    botaoDeletar.innerHTML = "Deletar";
-    botaoDeletar.onclick = () => {
-      excluir(elementoLi);
-    };
-
-    elementoLi.append(botaoEditar);
-    elementoLi.append(botaoDeletar);
-
-    dados.append(elementoLi);
-  });
+  var dados = document.getElementById("dadosS");
+  var elementoLi = document.createElement("li");
+  elementoLi.setAttribute("id", "dadoslistaSalario");
+  elementoLi.append(registro.salario);
+  dadosS.append(elementoLi);
 }
 
-function resetarFormulario() {
-  var formulario = document.getElementById("formulario");
-  formulario.reset();
-}
-
-function limparHtml() {
-  var lista = document.getElementById("lista");
-  lista.innerHTML = "";
-}
-
-function excluir(registro) {
-  registro.remove();
+function excluir() {
+  document.getElementById("dadoslistaNome").remove();
+  document.getElementById("dadoslistaFuncao").remove();
+  document.getElementById("dadoslistaSalario").remove();
 }
 
 function editar(id) {
   document.getElementById(id).style.display = "block";
 }
-
 function fechar(id) {
   document.getElementById(id).style.display = "none";
 }

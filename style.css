@@ -1,5 +1,3 @@
-body {
-}
 header {
   background-color: rgb(227, 227, 227);
   text-align: center;
@@ -11,29 +9,42 @@ div#button {
   justify-content: space-around;
   align-items: center;
 }
-
+input {
+  width: 20%;
+}
 #salvar {
   background-color: rgba(0, 128, 0, 0.401);
   border-radius: 3px;
 }
+
 #salvar:hover {
   transform: scale(1.07);
+  background-color: rgba(0, 128, 0, 0.295);
 }
 #editar {
   background-color: rgba(116, 138, 182, 0.401);
-  border-radius: 3px;
-  width: 20%;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: none;
+  margin-top: 10px;
 }
 #editar:hover {
   transform: scale(1.07);
+  background-color: rgba(116, 138, 182, 0.293);
 }
 #excluir {
   background-color: rgba(182, 116, 116, 0.49);
-  border-radius: 3px;
-  width: 20%;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: none;
+  margin-top: 10px;
+  margin-right: 15px;
 }
 #excluir:hover {
   transform: scale(1.07);
+  background-color: rgba(182, 116, 116, 0.395);
 }
 
 div.container {
@@ -46,14 +57,14 @@ div.container {
 ul {
   list-style: none;
 }
-form {
-}
 
 #lista {
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   background-color: rgb(211, 213, 213);
   border: solid 1px;
+  border-radius: 3px;
 }
 #lista:hover {
   transform: scale(1.01);
@@ -99,4 +110,13 @@ form {
 }
 #fechar:hover {
   transform: scale(1.07);
+}
+#dadosNome {
+  cursor: auto;
+}
+#dadosFuncao {
+  cursor: auto;
+}
+#dadosSalario {
+  cursor: auto;
 }

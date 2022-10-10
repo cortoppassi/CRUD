@@ -12,6 +12,7 @@
       <h1>Cadastro de Funcionarios</h1>
     </header>
 
+<<<<<<< HEAD
     <div class="container">
       <div id="button">
         <div class="btnFechar" onclick="fechar('popup')">
@@ -41,6 +42,29 @@
         <hr />
       </div>
       <ul id="lista"></ul>
+=======
+    <div class="container"><hr>
+         <div>
+            <form onsubmit="return false" id="formulario">
+                <label for="">Nome</label>
+                <input type="text" id="nome">
+
+                <label for="">Função</label>
+                <input type="text" id="funcao">
+
+                <label for="">Salario</label>
+                <input type="text" id="salario">
+
+                <button onclick="add()" id="salvar">Salvar</button>
+            </form>
+             <hr>
+        </div>
+        <div id="lista">
+            <ul id="dados"></ul>
+            <button id="editar" onclick="editar('popup')"><img src="https://cdn-icons-png.flaticon.com/512/1250/1250614.png" width="15px" alt=""></button>
+            <button id="excluir" onclick="excluir()"><img src="https://cdn-icons-png.flaticon.com/512/1799/1799391.png" width="15px" alt=""></button> 
+        </div>
+>>>>>>> bd6fd88b49900c99cad8f67eb754e78780561d86
     </div>
 
     <script src="script.js"></script>
