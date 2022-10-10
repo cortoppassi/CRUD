@@ -45,7 +45,7 @@ function listar(registro) {
 }
 
 function excluir() {
-    document.getElementById('listadeDados').remove()
+    document.getElementById('listadeDados').remove();
     document.getElementById('lista').style.display = 'none';
 }
 
