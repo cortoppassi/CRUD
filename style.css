@@ -1,113 +1,102 @@
-body{
-   
-
-    
+body {
 }
 header {
-background-color: rgb(227, 227, 227);
-text-align: center;
-font-family: sans-serif;
+  background-color: rgb(227, 227, 227);
+  text-align: center;
+  font-family: sans-serif;
+}
+div#button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
+#salvar {
+  background-color: rgba(0, 128, 0, 0.401);
+  border-radius: 3px;
 }
-div#button{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
+#salvar:hover {
+  transform: scale(1.07);
 }
-
-#salvar{
-    background-color: rgba(0, 128, 0, 0.401);
-    border-radius: 3px;
+#editar {
+  background-color: rgba(116, 138, 182, 0.401);
+  border-radius: 3px;
+  width: 20%;
 }
-#salvar:hover{
-    transform: scale(1.07);
+#editar:hover {
+  transform: scale(1.07);
 }
-#editar{
-    background-color: rgba(116, 138, 182, 0.401);
-    border-radius: 3px;
-    width: 20%;   
+#excluir {
+  background-color: rgba(182, 116, 116, 0.49);
+  border-radius: 3px;
+  width: 20%;
 }
-#editar:hover{
-    transform: scale(1.07);
-}
-#excluir{
-    background-color: rgba(182, 116, 116, 0.49);
-    border-radius: 3px;
-    width: 20%;
-}
-#excluir:hover{
-    transform: scale(1.07);
+#excluir:hover {
+  transform: scale(1.07);
 }
 
 div.container {
-    background-color: rgb(227, 227, 227);
-    margin: auto; 
-    font-family: sans-serif;
-    height: 300px;
-    border: solid 1px;
+  background-color: rgb(227, 227, 227);
+  margin: auto;
+  font-family: sans-serif;
+  height: 300px;
+  border: solid 1px;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-form{
-    
+form {
 }
 
 #lista {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(211, 213, 213);
-    border: solid 1px;
-    
-    
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(211, 213, 213);
+  border: solid 1px;
 }
 #lista:hover {
-    transform: scale(1.01);
-    
+  transform: scale(1.01);
 }
 
 #popup {
-    background-color: rgb(219, 212, 212);
-    width: 220px;
-    height: 22px;
-    margin-left: 100px;
-    display: none;
-    border: solid 1px;
-    border-radius: 3px;
-    box-shadow: 5px 5px 5px rgb(98, 98, 99);
-    
-
+  background-color: rgb(219, 212, 212);
+  width: 220px;
+  height: 22px;
+  margin-left: 100px;
+  display: none;
+  border: solid 1px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgb(98, 98, 99);
 }
 
 .btnFechar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 #editarNome {
-    background-color: rgba(116, 138, 182, 0.404);
+  background-color: rgba(116, 138, 182, 0.404);
 }
 #editarNome:hover {
-    transform: scale(1.07);
+  transform: scale(1.07);
 }
 #editarFuncao {
-    background-color: rgba(116, 138, 182, 0.404);
+  background-color: rgba(116, 138, 182, 0.404);
 }
 #editarFuncao:hover {
-    transform: scale(1.07);
+  transform: scale(1.07);
 }
 #editarSalario {
-    background-color: rgba(116, 138, 182, 0.404);
+  background-color: rgba(116, 138, 182, 0.404);
 }
 #editarSalario:hover {
-    transform: scale(1.07);
+  transform: scale(1.07);
 }
 #fechar {
-    background-color: rgba(255, 0, 0, 0.614);
+  background-color: rgba(255, 0, 0, 0.614);
 }
 #fechar:hover {
-    transform: scale(1.07);
+  transform: scale(1.07);
 }

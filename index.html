@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>CRUD</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <h1>Cadastro de Funcionarios</h1>
     </header>
 
     <div class="container">
-        <div id="button">
-            <button id="editar" onclick="editar('popup')">Editar</button>
-            <button id="excluir" onclick="excluir()">Excluir</button> 
-
-            <div class="btnFechar" onclick="fechar('popup')">
-                <div id="popup">
-                    <a href="javascript:;"><button id="fechar">X</button></a>
-                    <button id="editarNome" onclick="editname()">Nome</button>
-                    <button id="editarFuncao" onclick="editfunction()">função</button>
-                    <button id="editarSalario" onclick="editsalary()">Salario</button>
-                </div> 
-            </div>
+      <div id="button">
+        <div class="btnFechar" onclick="fechar('popup')">
+          <div id="popup">
+            <a href="javascript:;"><button id="fechar">X</button></a>
+            <button id="editarNome" onclick="editname()">Nome</button>
+            <button id="editarFuncao" onclick="editfunction()">função</button>
+            <button id="editarSalario" onclick="editsalary()">Salario</button>
+          </div>
         </div>
-           
-     <hr>
-            <div>
-                <form onsubmit="return false" id="formulario">
-                    <label for="">Nome</label>
-                     <input type="text" id="nome">
+      </div>
 
-                    <label for="">Função</label>
-                    <input type="text" id="funcao">
+      <hr />
+      <div>
+        <form onsubmit="return false" id="formulario">
+          <label for="">Nome</label>
+          <input type="text" id="nome" />
 
-                    <label for="">Salario</label>
-                    <input type="text" id="salario">
+          <label for="">Função</label>
+          <input type="text" id="funcao" />
 
-                    <button onclick="add()" id="salvar">Salvar</button>
-                </form>
-                <hr>
-            </div>
-            <div id="lista">
-                <div><ul id="dados"></ul></div>
-                <div><ul id="dadosF"></ul></div>
-                <div><ul id="dadosS"></ul></div>
-            </div>
+          <label for="">Salario</label>
+          <input type="text" id="salario" />
+
+          <button onclick="add()" id="salvar">Salvar</button>
+        </form>
+        <hr />
+      </div>
+      <ul id="lista"></ul>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-
